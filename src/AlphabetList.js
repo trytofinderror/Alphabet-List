@@ -3,7 +3,7 @@ import AlphabetItem from "./AlphabetItem";
 
 const mapArrToMap = (arr, nameKey) => {
   const map = new Map();
-  const Regx = /^[A-Za-z]$/;
+  const Regx = /^[A-Za-zА-Яа-я]$/;
   arr.forEach((item) => {
     const itemName = nameKey ? item[nameKey] : item;
     let firstChar = itemName[0];
