@@ -7,8 +7,9 @@ const mapArrToMap = (arr, nameKey) => {
   arr.forEach((item) => {
     const itemName = nameKey ? item[nameKey] : item;
     let firstChar = itemName[0];
+    console.log(Regx.test(firstChar));
     if (!Regx.test(firstChar)) {
-      firstChar = "#2";
+      firstChar = "#";
     } else {
       firstChar = firstChar.toUpperCase();
     }
